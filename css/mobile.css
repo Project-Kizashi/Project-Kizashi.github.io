@@ -1,0 +1,188 @@
+@media screen and (max-width: 1460px)
+{
+    .main_info{
+        width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-top: 20%;
+    }
+    .main_info_text{
+        width: 60%;
+        float:left;
+        font-size: 20px;
+        margin-left: 5%;
+        margin-bottom: 0%;
+    }
+    .main_info_image_container{
+        width: 30%;
+        margin-top: 4%;
+        margin-left:5%;
+        float:left;
+    }
+    .main_info_image{
+        height: 500px;
+    }
+    .main_info_button_container{
+        float:left;
+        margin-top: -15%;
+        width: 60%;
+        margin-left: 5%;
+    }
+}
+
+@media screen and (max-width: 1145px)
+{
+    .main_info{
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-top: 20%;
+        height: 1000px;
+        position: absolute;
+    }
+    .main_info_text{
+        width: 90%;
+        font-size: 20px;
+        margin-left: 5%;
+    }
+    .main_info_image_container{
+        width: 90%;
+        margin-top: 4%;
+        margin-left:5%;
+        display: grid;
+      place-items: center;
+    }
+    .main_info_image{
+        height: 500px;
+    }
+    .main_info_button_container{
+        float:none;
+        margin-top: 10%;
+        width: 100%;
+        position: relative;
+        
+    }
+    .main_info_button{
+        background-color: var(--darkest);
+        color: var(--lightest);
+        border-color: var(--lightest);
+        font-size: large;
+        border-radius: 30px;
+        border-style: solid;
+        height: 70px;
+        width: 150px;
+        transition: 1s;
+        float: left;
+        margin-left: 10%;
+        margin-top: 5%;
+    }
+
+}
+@media screen and (max-width: 751px)
+{
+    .header{
+        background-color: var(--darkest);
+        height: 50px;
+        width: 100%;
+        top:0px;
+        position: absolute;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+        border-style: none;
+        border-top-style: none;
+        border-bottom-style: solid;
+        border-color: var(--lightest);
+        left: 0px;
+        transition: 1s;
+    }
+    .logo{
+        filter: brightness(0) saturate(100%) invert(84%) sepia(12%) saturate(502%) hue-rotate(107deg) brightness(90%) contrast(89%);
+        font-size: 150%;
+        float: left;
+        transition: 1s;
+    }
+    .logo_img{
+        height: 50px;
+        transition: 1s;
+    }
+    .logo_text{
+        float:right;
+        margin-top: 10px;
+        transition: 1s;
+    }
+    .header_button{
+        margin: 5px;
+        background-color: var(--darkest);
+        color: var(--lightest);
+        border-color: var(--lightest);
+        font-size: large;
+        border-radius: 30px;
+        border-style: solid;
+        float: right;
+        height: 40px;
+        width: 60px;
+        transition: 1s;
+    }
+    .main_info_button{
+        margin: 5px;
+        background-color: var(--darkest);
+        color: var(--lightest);
+        border-color: var(--lightest);
+        font-size: large;
+        border-radius: 30px;
+        border-style: solid;
+        height: 40px;
+        width: 60px;
+        transition: 1s;
+        margin-left: 10%;
+        margin-top: 5%;
+    }
+    .header_button_text{
+        display: none;
+    }
+
+    .main_info{
+        background-color: var(--darkest);
+        width: 90%;
+        height: 1000px;
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-top: 20%;
+        border-radius: 30px;
+        border-style: solid;
+        border-color: var(--lightest);
+        text-align: center;
+    }
+    
+    .main_info_text{
+        width: 95%;
+        font-size: 20px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .heading{
+        font-size: 30px;
+    }
+    .main_info_image_container{
+        width: 100%;
+        margin-top: 4%;
+        float: left;
+        text-align: center;
+        display: grid;
+      place-items: center;
+      margin-left:0;
+    }  
+    .main_info_image{
+        height: 500px;
+    }
+    .main_info_button_container{
+        float:none;
+        margin-top: 10%;
+        width: 100%;
+        position: relative;
+        margin-left: 6%;
+        display:block;
+        place-items: center;
+    }
+}
+

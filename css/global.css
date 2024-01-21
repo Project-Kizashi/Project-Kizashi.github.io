@@ -1,0 +1,122 @@
+:root{
+    --darkest:#092635;
+    --dark:#1B4242;
+    --light:#5C8374;
+    --lightest:#9EC8B9;
+}
+body{
+    background-color: var(--light);
+    color: var(--lightest);
+}
+.header{
+    background-color: var(--darkest);
+    height: 100px;
+    width: 97.4%;
+    top:0px;
+    position: absolute;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border-style: solid;
+    border-top-style: none;
+    border-color: var(--lightest);
+    right: 1%;
+    left: 1%;
+    transition: 1s;
+    z-index: 1;
+    position: fixed;
+}
+.logo{
+    filter: brightness(0) saturate(100%) invert(84%) sepia(12%) saturate(502%) hue-rotate(107deg) brightness(90%) contrast(89%);
+    font-size: 400%;
+    float: left;
+    transition: 1s;
+}
+.logo_img:hover{
+    scale: 1.1;
+}
+.logo_img{
+    height: 100px;
+    transition: 1s;
+}
+.logo_text{
+    float:right;
+    margin-top: 10px;
+    transition: 1s;
+}
+.logo_img:hover{
+    scale: 1.1;
+    transition: 1s;
+}
+.logo_text:hover{
+    scale: 1.1;
+}
+
+.header_button{
+    margin: 10px;
+    background-color: var(--darkest);
+    color: var(--lightest);
+    border-color: var(--lightest);
+    font-size: large;
+    border-radius: 30px;
+    border-style: solid;
+    float: right;
+    height: 70px;
+    width: 150px;
+    transition: 1s;
+}
+button:hover{
+    background-color: var(--lightest);
+    color: var(--darkest);
+    scale: 1.1;
+}
+
+.main_info{
+    background-color: var(--darkest);
+    width: 60%;
+    height: 600px;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 10%;
+    border-radius: 30px;
+    border-style: solid;
+    border-color: var(--lightest);
+}
+
+.main_info_text{
+    width: 60%;
+    float:left;
+    font-size: 20px;
+    margin-left: 5%;
+}
+.heading{
+    font-size: 60px;
+}
+.main_info_image_container{
+    width: 30%;
+    float: right;
+    margin-top: 4%;
+}
+.main_info_image{
+    height: 500px;
+    border-radius: 20px;
+    border-style: solid;
+    border-color: var(--lightest);
+}
+.main_info_button_container{
+    margin-top: 40%;
+    
+}
+.main_info_button{
+    margin: 10px;
+    background-color: var(--darkest);
+    color: var(--lightest);
+    border-color: var(--lightest);
+    font-size: large;
+    border-radius: 30px;
+    border-style: solid;
+    height: 70px;
+    width: 150px;
+    transition: 1s;
+    float: left;
+    margin-left: 5%;
+}

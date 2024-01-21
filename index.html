@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project-Kizashi</title>
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/mobile.css" />
+    <script src="scripts/home.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <div class="header">
+      <header>
+        <div class="logo">
+          <img class="logo_img" src="assets/logo_transparent.png" /><strong
+            class="logo_text"
+            >Project-Kizashi</strong
+          >
+        </div>
+        <div>
+          <button class="header_button" onclick="download()">
+            <strong class="header_button_text">Download </strong
+            ><i class="fa fa-download"></i></button
+          ><button class="header_button">
+            <strong class="header_button_text" onclick="donate()">Support </strong
+            ><i class="fa fa-dollar"></i>
+          </button>
+        </div>
+      </header>
+    </div>
+    <div class="main_info">
+      <div class="main_info_text">
+      <h1 class="heading">What is Project-Kizashi</h1>
+      <p>
+        Project-Kizashi is a aftermarket android firmware which is based on
+        android and derieved form LineageOS and its forks. It focuses mainly on
+        older android phones based on older linux kernels which cannot support
+        latest android versions due to hardware restrictions.
+        <br /><br />
+        It includes various tweaks to boost system performance and reliablity
+        with a touch of customization and upto date with the latest Security
+        patches released by google.
+      </p>
+    </div>
+    <div class="main_info_image_container">
+      <img class="main_info_image" src="assets/display.png">
+    </div>
+    <div class="main_info_button_container">
+      <button class="main_info_button" onclick="download()"><strong class="header_button_text">Download </strong><i class="fa fa-download"></i></button><button class="main_info_button" onclick="source()"><strong class="header_button_text">Source </strong><i class="fa fa-github"></i></button><button class="main_info_button" onclick="telegram()"><strong class="header_button_text">Telegram </strong><i class="fa fa-telegram"></i></button>
+    </div>
+    </div>
+  </body>
+</html>
