@@ -3,55 +3,144 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>Project-Kizashi</title>
-    <link rel="stylesheet" href="css/global.css" />
-    <link rel="stylesheet" href="css/mobile.css" />
+
+    <link rel="stylesheet" href="css/index.css" />
     <script src="scripts/home.js"></script>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="assets/Project_Kizashi-modified.png"
+    />
   </head>
   <body>
-    <div class="header">
-      <header>
-        <div class="logo">
-          <img class="logo_img" src="assets/logo_transparent.png" /><strong
-            class="logo_text"
-            >Project-Kizashi</strong
-          >
+    <!-- header-->
+    <header>
+      <a href="index.html"><img src="assets/logo_transparent.png" /></a>
+      <h1>Project-Kizashi</h1>
+      <nav>
+        <a
+          href="https://sourceforge.net/projects/project-kizashi/files/"
+          class="button"
+          >Devices</a
+        >
+        <a href="https://github.com/Project-Kizashi" class="button">Source <i class="fa fa-github"></i></a>
+      </nav>
+    </header>
+
+    <!--Main Info-->
+    <section class="main_info">
+      <div class="cont">
+        <div class="text">
+          <h2>What is Project-Kizashi?</h2>
+          <p>
+            Project-Kizashi is a aftermarket android firmware which is based on
+            android and derieved form LineageOS and its forks. It focuses mainly
+            on older android phones based on older linux kernels which cannot
+            support latest android versions due to hardware restrictions.
+            <br /><br />
+            It includes various tweaks to boost system performance and
+            reliablity with a touch of customization and upto date with the
+            latest Security patches released by google.
+          </p>
         </div>
-        <div>
-          <button class="header_button" onclick="download()">
-            <strong class="header_button_text">Download </strong
-            ><i class="fa fa-download"></i></button
-          ><button class="header_button">
-            <strong class="header_button_text" onclick="donate()">Support </strong
-            ><i class="fa fa-dollar"></i>
+        <div class="buttons">
+          <button class="main_info_button" onclick="download()">
+            Download <i class="fa fa-download"></i>
+          </button>
+          <button class="main_info_button" onclick="source()">
+            Source <i class="fa fa-github"></i>
+          </button>
+          <button class="main_info_button" onclick="telegram()">
+            Telegram <i class="fa fa-telegram"></i>
           </button>
         </div>
-      </header>
+      </div>
+      <div class="image"><img src="assets/display.png" /></div>
+    </section>
+
+    <!--Features-->
+    <section class="features">
+      <h2>Features</h2>
+      <section class="list">
+        <div>
+          <h3><i class="fa fa-anchor"></i> Stablity</h3>
+          
+          <p>Our source is based on LineageOS for Maximum Stablity.</p>
+        </div>
+
+        <div>
+          <h3><i class="fa fa-gamepad"></i> Performance</h3>
+          
+          <p>
+            Many patches and fixes have been applied to increase the
+            performance.
+          </p>
+        </div>
+
+        <div>
+          <h3><i class="fa fa-paper-plane"></i> Lightweight</h3>
+          
+          <p>This rom is not heavy on system resources.</p>
+        </div>
+
+        <div>
+          <h3><i class="fa fa-diamond"></i> Clean UI</h3>
+          
+          <p>Our rom dont ship any unnecessary bloatwares.</p>
+        </div>
+        <div>
+          <h3><i class="fa fa-laptop"></i> Old Device Support</h3>
+          
+          <p>Our rom focuses more on older hardware support.</p>
+        </div>
+
+        <div>
+          <h3><i class="fa fa-github"></i> Open Source</h3>
+          
+          <p>Our source is avalable on our github.</p>
+        </div>
+        <div>
+          <h3><i class="fa fa-clock-o"></i> Ota Updates</h3>
+          
+          <p>Our rom supports ota updates via the updater app.</p>
+        </div>
+
+        <div>
+          <h3><i class="fa fa-support"></i> Support</h3>
+          
+          <p>We provide support for our rom on Xda as well as Telegram.</p>
+        </div>
+      </section>
+    </section>
+    <section class="developers">
+      <h2><i class="fa fa-code"></i> Developers</h2>
+      <div>
+      <div>
+      <div><i class="fa fa-user usr"></i>
+      <h4>Prabhat Maurya</h4></div>
+      <div class="btn">
+      <i class="fa fa-github button_profile" onclick="donate()"></i>
+      <i class="fa fa-telegram button_profile" onclick="my_telegram()"></i>
+      <i class="fa fa-instagram button_profile" onclick="insta()"></i>
+      <i class="fa fa-linkedin button_profile" onclick="linkedin()"></i>
     </div>
-    <div class="main_info">
-      <div class="main_info_text">
-      <h1 class="heading">What is Project-Kizashi</h1>
-      <p>
-        Project-Kizashi is a aftermarket android firmware which is based on
-        android and derieved form LineageOS and its forks. It focuses mainly on
-        older android phones based on older linux kernels which cannot support
-        latest android versions due to hardware restrictions.
-        <br /><br />
-        It includes various tweaks to boost system performance and reliablity
-        with a touch of customization and upto date with the latest Security
-        patches released by google.
-      </p>
-    </div>
-    <div class="main_info_image_container">
-      <img class="main_info_image" src="assets/display.png">
-    </div>
-    <div class="main_info_button_container">
-      <button class="main_info_button" onclick="download()"><strong class="header_button_text">Download </strong><i class="fa fa-download"></i></button><button class="main_info_button" onclick="source()"><strong class="header_button_text">Source </strong><i class="fa fa-github"></i></button><button class="main_info_button" onclick="telegram()"><strong class="header_button_text">Telegram </strong><i class="fa fa-telegram"></i></button>
-    </div>
-    </div>
+  </div>
+  <div>
+    <div><i class="fa fa-user usr"></i>
+    <h4>Rahul Talukdar</h4></div>
+    <div class="btn">
+    <i class="fa fa-github button_profile" onclick="donate_rahul()"></i>
+    <i class="fa fa-telegram button_profile" onclick="my_telegram_rahul()"></i>
+    <i class="fa fa-instagram button_profile" onclick="insta_rahul()"></i>
+    <i class="fa fa-linkedin button_profile" onclick="linkedin_rahul()"></i>
+  </div>
+</div></div>
+    </section>
   </body>
 </html>

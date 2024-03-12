@@ -1,0 +1,182 @@
+:root{
+    --bg-primary:#F8F8F8;
+    --color-primary:#222222;
+    --bg-secondary:#e9e9e9;
+}
+header >a> img{
+    float: left;
+    filter: brightness(0) saturate(100%) invert(0%) sepia(12%) saturate(1562%) hue-rotate(319deg) brightness(95%) contrast(73%);
+    height: 3rem;
+    transition: 1s;
+}
+header > a > img:hover{
+    scale: 1.2; 
+}
+
+header{
+    width: 70em;
+    height: 2rem;
+    background-color: var(--bg-secondary);
+    margin: 0px auto 3em auto;
+    border-radius: 0px 0px 15px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+header > h1{
+    font-size: xx-large;
+    vertical-align: middle;
+}
+body{
+    padding: 0px;
+    margin: 0px;
+    background-color: var(--bg-primary);
+    color: var(--color-primary);
+    font-family: sans-serif;
+    font-size: 1.1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.main_info{
+    width: 70em;
+    background-color: var(--bg-secondary);
+    margin: 1rem auto 1rem auto;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.main_info > .image >img{
+    width:20rem;
+    border-radius: 15px;
+}
+.main_info > .image{
+    margin:2em;
+    
+}
+
+.main_info > div > div > h2{
+    font-size: 2.5em;
+}
+.main_info > div > div > p{
+    width: 30em;
+    padding-top: 2em;
+    padding-bottom: 4em;
+}
+
+.main_info > .cont{
+    padding-left: 8em;
+}
+.buttons{
+    width: 30em;
+    display: flex;
+    justify-content: space-between;
+}
+.buttons > button{
+    font-size: 1em;
+}
+.main_info_button, .button{
+   border:1px solid var(--color-primary);
+   border-radius: 10px;
+   padding: 0.6rem;
+   color: var(--color-primary);
+   transition: 1s;
+   text-decoration: solid;
+}
+.main_info_button:hover, .button:hover{
+    background-color: var(--color-primary);
+    color: var(--bg-secondary);
+    scale: 1.1;
+}
+
+.features{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70em;
+    margin: 3em auto 1rem auto;
+    background-color: var(--bg-secondary);
+    border-radius: 15px;
+    padding: 1em;
+    padding-bottom: 3em;
+}
+
+.features > .list{
+ display:flex;
+ justify-content: center;
+ flex-wrap: wrap;
+ gap: 1em;
+}
+
+.features > .list > div{
+    border:1px solid var(--color-primary);
+    border-radius: 10px;
+    width: 14em;
+    height: 14em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: 1s;
+}
+.features > .list > div > p{
+    width: 13em;
+    text-align: center;
+    
+}
+.features > .list > div:hover{
+    background-color: var(--color-primary);
+    color: var(--bg-secondary);
+    scale: 1.1;
+}
+
+.developers{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70em;
+    margin: 3em auto 1rem auto;
+    background-color: var(--bg-secondary);
+    border-radius: 15px;
+    padding: 1em;
+    padding-bottom: 3em;
+}
+.developers >div> div{
+    text-align: center;
+    border:1px solid var(--color-primary);
+    border-radius: 10px;
+    width: 14em;
+    height: 14em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.developers > div{
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+}
+.usr::before{
+    font-size: 5em;
+    display: block;
+}
+.button_profile{
+    transition: 1s;
+}
+.button_profile::before{
+    font-size: 1.5em;
+}
+.button_profile:hover{
+    scale: 2;
+}
+.developers >div> div > .btn{
+    display: flex;
+    justify-content: space-evenly;
+}
