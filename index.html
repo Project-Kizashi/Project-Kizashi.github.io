@@ -7,7 +7,7 @@
     <title>Project-Kizashi</title>
 
     <link rel="stylesheet" href="css/index.css" />
-    <script src="scripts/home.js"></script>
+    
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -24,12 +24,8 @@
       <a href="index.html"><img src="assets/logo_transparent.png" /></a>
       <h1>Project-Kizashi</h1>
       <nav>
-        <a
-          href="https://sourceforge.net/projects/project-kizashi/files/"
-          class="button"
-          >Devices</a
-        >
-        <a href="https://github.com/Project-Kizashi" class="button">Source <i class="fa fa-github"></i></a>
+        <a id="devices.html" class="button clickable">Devices</a>
+        <a class="button clickable" id="https://github.com/Project-Kizashi/">Source <i class="fa fa-github"></i></a>
       </nav>
     </header>
 
@@ -50,13 +46,13 @@
           </p>
         </div>
         <div class="buttons">
-          <button class="main_info_button" onclick="download()">
+          <button class="main_info_button clickable" id="devices.html">
             Download <i class="fa fa-download"></i>
           </button>
-          <button class="main_info_button" onclick="source()">
+          <button class="main_info_button clickable" id="https://github.com/Project-Kizashi">
             Source <i class="fa fa-github"></i>
           </button>
-          <button class="main_info_button" onclick="telegram()">
+          <button class="main_info_button clickable" id="https://t.me/ProjectKizashi">
             Telegram <i class="fa fa-telegram"></i>
           </button>
         </div>
@@ -125,22 +121,23 @@
       <div><i class="fa fa-user usr"></i>
       <h4>Prabhat Maurya</h4></div>
       <div class="btn">
-      <i class="fa fa-github button_profile" onclick="donate()"></i>
-      <i class="fa fa-telegram button_profile" onclick="my_telegram()"></i>
-      <i class="fa fa-instagram button_profile" onclick="insta()"></i>
-      <i class="fa fa-linkedin button_profile" onclick="linkedin()"></i>
+      <i class="fa fa-github button_profile clickable" id="https://github.com/PrabhatProxy"></i>
+      <i class="fa fa-telegram button_profile clickable" id="https://t.me/prabhat_proxy"></i>
+      <i class="fa fa-instagram button_profile clickable" id="https://www.instagram.com/prabhat.maurya_/"></i>
+      <i class="fa fa-linkedin button_profile clickable" id="https://www.linkedin.com/in/prabhat-kumar-maurya-994816249/"></i>
     </div>
   </div>
   <div>
     <div><i class="fa fa-user usr"></i>
     <h4>Rahul Talukdar</h4></div>
     <div class="btn">
-    <i class="fa fa-github button_profile" onclick="donate_rahul()"></i>
-    <i class="fa fa-telegram button_profile" onclick="my_telegram_rahul()"></i>
-    <i class="fa fa-instagram button_profile" onclick="insta_rahul()"></i>
-    <i class="fa fa-linkedin button_profile" onclick="linkedin_rahul()"></i>
+    <i class="fa fa-github button_profile clickable" id="https://github.com/Noctowl709"></i>
+    <i class="fa fa-telegram button_profile clickable " id="https://t.me/Nekotalia"></i>
+    <i class="fa fa-instagram button_profile clickable " id="https://www.instagram.com/noctowl709/"></i>
+    <i class="fa fa-linkedin button_profile clickable " id="https://www.linkedin.com/in/rahul-talukdar/"></i>
   </div>
 </div></div>
     </section>
   </body>
+  <script src="scripts/home.js"></script>
 </html>

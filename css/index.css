@@ -3,6 +3,7 @@
     --color-primary:#222222;
     --bg-secondary:#e9e9e9;
 }
+
 header >a> img{
     float: left;
     filter: brightness(0) saturate(100%) invert(0%) sepia(12%) saturate(1562%) hue-rotate(319deg) brightness(95%) contrast(73%);
@@ -23,6 +24,7 @@ header{
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
+    box-shadow: 1px 1px 15px #969696 ;
 }
 
 header > h1{
@@ -50,11 +52,13 @@ body{
     align-items: center;
     justify-content: space-between;
     padding: 1rem;
+    box-shadow: 1px 1px 15px #969696 ;
 }
 
 .main_info > .image >img{
     width:20rem;
     border-radius: 15px;
+    box-shadow: 1px 1px 15px #969696 ;
 }
 .main_info > .image{
     margin:2em;
@@ -77,6 +81,7 @@ body{
     width: 30em;
     display: flex;
     justify-content: space-between;
+    
 }
 .buttons > button{
     font-size: 1em;
@@ -88,6 +93,7 @@ body{
    color: var(--color-primary);
    transition: 1s;
    text-decoration: solid;
+   box-shadow: 1px 1px 5px #969696 ;
 }
 .main_info_button:hover, .button:hover{
     background-color: var(--color-primary);
@@ -105,6 +111,7 @@ body{
     border-radius: 15px;
     padding: 1em;
     padding-bottom: 3em;
+    box-shadow: 1px 1px 15px #969696 ;
 }
 
 .features > .list{
@@ -124,6 +131,7 @@ body{
     align-items: center;
     justify-content: center;
     transition: 1s;
+    box-shadow: 1px 1px 5px #969696 ;
 }
 .features > .list > div > p{
     width: 13em;
@@ -146,6 +154,7 @@ body{
     border-radius: 15px;
     padding: 1em;
     padding-bottom: 3em;
+    box-shadow: 1px 1px 15px #969696 ;
 }
 .developers >div> div{
     text-align: center;
@@ -156,7 +165,14 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    transition: 1s;
+    box-shadow: 1px 1px 5px #969696 ;
 
+}
+.developers >div >div:hover{
+    background-color: var(--color-primary);
+    color: var(--bg-secondary);
+    scale: 1.1;
 }
 .developers > div{
     display: flex;
@@ -179,4 +195,73 @@ body{
 .developers >div> div > .btn{
     display: flex;
     justify-content: space-evenly;
+}
+
+.devices{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70em;
+    margin: 1em auto 1rem auto;
+    background-color: var(--bg-secondary);
+    border-radius: 15px;
+    padding: 1em;
+    padding-bottom: 3em;
+    box-shadow: 1px 1px 15px #969696 ;
+}
+
+.devices > h2{
+    border:1px solid var(--color-primary);
+    border-radius: 10px;
+    padding: 0 1em 0 1em;
+    font-size: 2.5em;
+}
+.manufacturer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    align-items: center;
+}
+
+.phone{
+    width: 20em;
+    height: 30em;
+    margin: 1em 0 1em 0;
+    border:1px solid var(--color-primary);
+    border-radius: 10px;
+    background-color: var(--bg-primary);
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    align-items: center;
+    box-shadow: 1px 1px 5px #969696 ;
+    transition: 1s;
+}
+
+.phone:hover{
+    scale: 1.05;
+}
+
+
+.deviceContainer{
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+}
+
+.phone > img{
+    width: 12em;
+    height: 16em;
+    border-radius: 20px;
+}
+
+.phone > div{
+    margin-bottom: 1em;
+    display: flex;
+    justify-content: space-between;
+    gap: 1em;
+}
+.phone > div > a > button{
+    font-size: 0.9em;
 }
