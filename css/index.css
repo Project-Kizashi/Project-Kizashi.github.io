@@ -191,7 +191,9 @@ body{
 }
 .button_profile:hover{
     scale: 2;
+    color: white;
 }
+
 .developers >div> div > .btn{
     display: flex;
     justify-content: space-evenly;
@@ -245,8 +247,10 @@ body{
 
 
 .deviceContainer{
+    max-width: 100%;
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap; 
+    justify-content: center;
     gap: 1em;
 }
 
