@@ -4,6 +4,16 @@ let check = 0;
 
 const base = document.querySelector("#devices");
 
+ function showLoadingAnimation() {
+  document.getElementById('loading-animation').classList.remove('hidden');
+}
+
+function hideLoadingAnimation() {
+  document.getElementById('loading-animation').classList.add('hidden');
+}
+
+showLoadingAnimation();
+
 fetch(
   "https://raw.githubusercontent.com/Project-Kizashi/OTA/relay/devices/list.json"
 )
@@ -23,6 +33,7 @@ fetch(
           if (check == device.devices.length) {
             //console.log(devices);
             initDevices();
+            hideLoadingAnimation();
           }
         });
     });
